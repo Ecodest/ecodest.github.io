@@ -342,7 +342,7 @@ const englishCopy = {
     }
     const target = new URL(initial, location.href);
     if (link.hasAttribute("data-case-back") && query.get("from") === "home") {
-      target.pathname = "/gallery-draft/";
+      target.pathname = "/";
       target.hash = "work";
       const label = link.querySelector("span");
       const text = locale === "en" ? "Back to home" : "На главную";
@@ -352,7 +352,7 @@ const englishCopy = {
       const next = link.dataset.language === "en" ? "en" : "ru";
       const samePage = new URL(location.href);
       if (next === "en") samePage.searchParams.set("lang", "en"); else samePage.searchParams.delete("lang");
-      if (samePage.pathname === "/gallery-draft/" && target.pathname === samePage.pathname && target.hash) {
+      if (samePage.pathname === "/" && target.pathname === samePage.pathname && target.hash) {
         samePage.hash = target.hash;
       }
       const href = samePage.pathname + samePage.search + samePage.hash;

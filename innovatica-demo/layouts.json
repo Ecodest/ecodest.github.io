@@ -3,13 +3,13 @@
     "id": "home",
     "title": "Главная",
     "desktop": {
-      "image": "home-desktop.png",
+      "image": "home-desktop.webp",
       "previewImage": "home-desktop.webp",
       "width": 1440,
       "height": 8559
     },
     "mobile": {
-      "image": "home-mobile.png",
+      "image": "home-mobile.webp",
       "width": 375,
       "height": 7250
     },

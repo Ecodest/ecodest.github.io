@@ -5,7 +5,14 @@
 <title>Project manager landing page demo</title>
 <script>
 const device = new URLSearchParams(location.search).get('device');
-if (device === 'desktop' || device === 'mobile') document.documentElement.dataset.device = device;
+const narrow = matchMedia('(max-width: 480px)');
+function showArtwork() {
+  const selected = device === 'desktop' || device === 'mobile' ? device : narrow.matches ? 'mobile' : 'desktop';
+  document.documentElement.dataset.device = selected;
+  for (const image of document.querySelectorAll('[data-art][data-device="' + selected + '"]')) {
+    if (!image.hasAttribute('src')) image.src = image.dataset.art;
+  }
+}
 </script>
 <style>
 html{scroll-behavior:smooth;scrollbar-width:none}
@@ -66,8 +73,10 @@ html:not([data-device]) .mobile{display:block!important}
 }
 </style>
 <main>
-  <img class="desktop" src="desktop.png" width="2880" height="10922" alt="Desktop project manager landing page">
-  <img class="mobile" src="mobile.png" width="720" height="11716" alt="Mobile project manager landing page">
+  <img class="desktop" data-device="desktop" data-art="desktop.webp" fetchpriority="high" width="2880" height="10922" alt="Desktop project manager landing page">
+  <img class="mobile" data-device="mobile" data-art="mobile.webp" fetchpriority="high" width="720" height="11716" alt="Mobile project manager landing page">
+  <script>showArtwork(); narrow.addEventListener('change', showArtwork);</script>
+  <noscript><style>[data-art]{display:none!important}</style><picture><source media="(max-width:480px)" srcset="mobile.webp"><img src="desktop.webp" alt="Project manager landing page"></picture></noscript>
   <span class="anchor desktop" id="desktop-services" style="top:30%" tabindex="-1"></span>
   <span class="anchor desktop" id="desktop-about" style="top:49%" tabindex="-1"></span>
   <span class="anchor desktop" id="desktop-contact" style="top:89%" tabindex="-1"></span>
@@ -85,7 +94,7 @@ html:not([data-device]) .mobile{display:block!important}
   <a class="jump contact-jump mobile" data-filled href="#mobile-contact" aria-label="Contact me about your project" style="left:4.4%;top:24.82%;width:91.2%;height:.74%"></a>
   <a class="jump contact-jump mobile" data-filled href="#mobile-contact" aria-label="Contact me about services" style="left:4.4%;top:50.48%;width:91.2%;height:.74%"></a>
   <div class="demo-map desktop" aria-hidden="true" style="top:67.29536715%;height:13.27595678%;--map-font-size:14px;--map-stroke:1.2">
-    <img src="demo-map-desktop.webp" alt="">
+    <img data-device="desktop" data-art="demo-map-desktop.webp" loading="lazy" alt="">
     <svg viewBox="0 0 1440 725">
       <g style="--delay:0ms"><path d="M257,186 L228,186 L217,182 L211,175 L209,165 L209,85 L205,73 L197,66 L184,64 L126,64" pathLength="1"/><text x="128" y="60">Canada</text></g>
       <g style="--delay:670ms"><path d="M269,275 L228,275 L219,278 L214,285 L212,294 L212,307 L209,315 L204,320 L196,322 L140,322" pathLength="1"/><text x="140" y="317">the USA</text></g>
@@ -103,7 +112,7 @@ html:not([data-device]) .mobile{display:block!important}
     </svg>
   </div>
   <div class="demo-map mobile" aria-hidden="true" style="top:70.41652441%;height:5.29190850%;--map-font-size:23px;--map-stroke:1.5">
-    <img src="demo-map-mobile.webp" alt="">
+    <img data-device="mobile" data-art="demo-map-mobile.webp" loading="lazy" alt="">
     <svg viewBox="0 0 720 620">
       <g style="--delay:0ms"><path d="M91,271 L80,268 L72,262 L67,253 L64,242 L64,105" pathLength="1"/><text x="33" y="94">Canada</text></g>
       <g style="--delay:670ms"><path d="M100,322 L88,323 L78,327 L70,335 L66,347 L66,517" pathLength="1"/><text x="28" y="545">the USA</text></g>
@@ -123,7 +132,7 @@ html:not([data-device]) .mobile{display:block!important}
 </main>
 <dialog aria-label="Mobile menu">
 <div class="menu-screen">
-  <img src="menu.png" alt="">
+  <img src="menu.png" loading="lazy" alt="">
   <form method="dialog"><button class="jump close" aria-label="Close menu"></button></form>
   <nav aria-label="Menu links">
     <a href="#mobile-services" aria-label="My services"></a>
@@ -146,6 +155,7 @@ if (window.parent !== window) {
     window.scrollTo({top:position * (document.documentElement.scrollHeight - window.innerHeight), behavior:'instant'});
   });
 }
+showArtwork();
 const menu = document.querySelector('dialog');
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
 const mapObserver = new IntersectionObserver(entries => {

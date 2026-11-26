@@ -6,11 +6,19 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Инноватика Системс — демо</title>
   <link rel="stylesheet" href="demo.css?v=scale-1">
+  <script>
+    const initialArtwork = document.createElement("link");
+    initialArtwork.rel = "preload";
+    initialArtwork.as = "image";
+    initialArtwork.href = new URLSearchParams(location.search).get("device") === "desktop"
+      ? "home-desktop.webp" : "home-mobile.webp";
+    document.head.append(initialArtwork);
+  </script>
   <script type="module" src="demo.js?v=partners-8"></script>
 </head>
 <body>
   <main class="layout" aria-label="Кликабельный макет">
-    <img class="layout-image" alt="">
+    <img class="layout-image" fetchpriority="high" alt="">
     <div class="hotspots"></div>
   </main>
   <dialog class="panel" aria-labelledby="panel-title">
