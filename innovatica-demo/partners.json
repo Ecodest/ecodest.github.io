@@ -1,0 +1,38 @@
+[
+  {
+    "image": "partner-gazprombank.svg",
+    "alt": "Газпромбанк",
+    "source": "InnSys/logos/company=gazprombank, color=false.svg",
+    "sha256": "12bb61bb6f08a8aed3de8f11420b529fe7e0e5ea5c1ddba6ea27ce7081aadbf8"
+  },
+  {
+    "image": "partner-kbr.svg",
+    "alt": "КБР",
+    "source": "InnSys/logos/company=kbr, color=false.svg",
+    "sha256": "f191b70731a65a0b3b4fbd40edc8b76bd1dab6e7dd887c0ec9a7550bdf5cc546"
+  },
+  {
+    "image": "partner-mfti.png",
+    "alt": "МФТИ",
+    "source": "InnSys/logos/company=mfti, color=false.png",
+    "sha256": "fdd613f85a1eb65c4bed9a469a8f0ee2b2370f7434eadc07a9e87b3628800b83"
+  },
+  {
+    "image": "partner-ag.svg",
+    "alt": "AG",
+    "source": "InnSys/logos/company=AG, color=false.svg",
+    "sha256": "63a75578f5ddd95716a16fd854aaf5564ba1c31b0de9e036ef8e4b5f692f1284"
+  },
+  {
+    "image": "partner-kbgu.svg",
+    "alt": "КБГУ",
+    "source": "InnSys/logos/company=kbgu, color=false.svg",
+    "sha256": "5d059c29bae49c2d2338521e3093564d8228bcf4fa9d6d4f0cd135f6f2de88c6"
+  },
+  {
+    "image": "partner-roskosmos.svg",
+    "alt": "Роскосмос",
+    "source": "InnSys/logos/company=roskosmos, color=false.svg",
+    "sha256": "88dc2bc57c9c1d1254840bbb840e541913de8c8df42bd49c9ac291c523f01f8b"
+  }
+]

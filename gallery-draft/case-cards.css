@@ -1,0 +1,41 @@
+.gallery-card{
+  background:rgba(228,231,228,.13);
+  -webkit-backdrop-filter:blur(18px);
+  backdrop-filter:blur(18px);
+  border-color:#c6d6ee55;
+}
+.project-mockups{position:absolute;inset:28px 18px 130px;display:flex;align-items:center;justify-content:center;gap:14px}
+.project-mockups img{display:block;width:100%;height:100%;object-fit:contain;object-position:top}
+.pm-device-pair img{object-position:center}
+.mockup-phone{position:relative;display:block;flex-shrink:0;height:232px;aspect-ratio:9/19.5;border:5px solid #1b1b20;border-radius:19px;background:#0b0b0e;overflow:hidden;box-shadow:0 12px 24px #0005}
+.mockup-phone:not(.supplied-device):before{content:'';position:absolute;top:3px;left:34%;width:32%;height:5px;background:#17171b;border-radius:4px;z-index:1}
+.mockup-phone.supplied-device{border:0;background:transparent;box-shadow:none;border-radius:18px}
+.mockup-browser{position:relative;display:block;width:100%;aspect-ratio:1.5;background:#17171b;border:3px solid #222228;border-radius:9px;overflow:hidden;box-shadow:0 12px 24px #0005}
+.browser-chrome{height:15px;display:flex;gap:3px;align-items:center;padding:0 6px;background:#303039}
+.browser-chrome i{width:3px;height:3px;background:#b7b4bc;border-radius:50%}
+.mockup-browser img{height:calc(100% - 15px);object-fit:contain}
+.with-browser .mockup-phone{position:absolute;right:0;bottom:8px;height:174px;border-width:4px;border-radius:15px}
+.with-browser:has(.mockup-phone) .mockup-browser{margin-top:-38px;margin-right:30px;width:calc(100% - 24px)}
+
+.gallery-card{
+  border-radius:32px;
+  text-decoration:none;
+  transition:border-color 160ms ease,box-shadow 160ms ease;
+}
+.gallery-card:focus-visible{
+  border-color:#fff;
+  box-shadow:inset 0 0 14px #fff3;
+}
+@media(hover:hover) and (pointer:fine){
+  .gallery-card:hover{
+    border-color:#fff;
+    box-shadow:inset 0 0 14px #fff4,0 0 18px #fff4;
+  }
+}
+.gallery-card:active{
+  border-color:#fff;
+  box-shadow:inset 0 0 0 1px #fffd,inset 0 0 20px #fff4;
+}
+@media(prefers-reduced-motion:reduce){
+  .gallery-card{transition:none}
+}

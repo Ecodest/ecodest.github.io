@@ -1,0 +1,229 @@
+{
+  "home-desktop": {
+    "header": [
+      "home-desktop-header.png",
+      [
+        270,
+        48,
+        980,
+        24
+      ]
+    ],
+    "footer": [
+      "footer-clean-home-desktop.webp",
+      [
+        220,
+        8145,
+        1000,
+        46
+      ],
+      8237
+    ]
+  },
+  "home-mobile": {
+    "footer": [
+      "footer-clean-home-mobile.webp",
+      [
+        20,
+        6709,
+        310,
+        119
+      ],
+      6885
+    ]
+  },
+  "about-desktop": {
+    "header": [
+      "about-desktop-header.png",
+      [
+        172,
+        48,
+        1210,
+        26
+      ]
+    ],
+    "footer": [
+      "footer-clean-about-desktop.webp",
+      [
+        220,
+        7397,
+        1000,
+        46
+      ],
+      7518
+    ],
+    "circuit": [
+      "about-desktop-circuit.png",
+      [
+        0,
+        2170,
+        1440,
+        830
+      ]
+    ]
+  },
+  "about-mobile": {
+    "footer": [
+      "footer-clean-about-mobile.webp",
+      [
+        20,
+        5379,
+        310,
+        119
+      ],
+      5551
+    ],
+    "circuit": [
+      "about-mobile-circuit.png",
+      [
+        0,
+        1420,
+        375,
+        900
+      ]
+    ]
+  },
+  "products-desktop": {
+    "header": [
+      "products-desktop-header.png",
+      [
+        172,
+        55,
+        1210,
+        26
+      ]
+    ],
+    "footer": [
+      "footer-clean-products-desktop.webp",
+      [
+        220,
+        2941,
+        1000,
+        46
+      ],
+      3016
+    ]
+  },
+  "products-mobile": {
+    "footer": [
+      "footer-clean-products-mobile.webp",
+      [
+        20,
+        3274,
+        310,
+        119
+      ],
+      3450
+    ]
+  },
+  "career-desktop": {
+    "header": [
+      "career-desktop-header.png",
+      [
+        172,
+        48,
+        1210,
+        26
+      ]
+    ],
+    "footer": [
+      "footer-clean-career-desktop.webp",
+      [
+        220,
+        5632,
+        1000,
+        46
+      ],
+      5749
+    ]
+  },
+  "career-mobile": {
+    "footer": [
+      "footer-clean-career-mobile.webp",
+      [
+        20,
+        5824,
+        310,
+        119
+      ],
+      6000
+    ]
+  },
+  "contacts-desktop": {
+    "header": [
+      "contacts-desktop-header.png",
+      [
+        172,
+        48,
+        1210,
+        26
+      ]
+    ],
+    "footer": [
+      "footer-clean-contacts-desktop.webp",
+      [
+        220,
+        5625,
+        1000,
+        46
+      ],
+      5743
+    ]
+  },
+  "contacts-mobile": {
+    "footer": [
+      "footer-clean-contacts-mobile.webp",
+      [
+        20,
+        3583,
+        310,
+        119
+      ],
+      3763
+    ]
+  },
+  "investors-desktop": {
+    "header": [
+      "investors-desktop-header.png",
+      [
+        172,
+        48,
+        1210,
+        26
+      ]
+    ],
+    "footer": [
+      "footer-clean-investors-desktop.webp",
+      [
+        220,
+        5597,
+        1000,
+        46
+      ],
+      5715
+    ]
+  },
+  "investors-mobile": {
+    "footer": [
+      "footer-clean-investors-mobile.webp",
+      [
+        20,
+        5289,
+        310,
+        119
+      ],
+      5468
+    ]
+  },
+  "investors-en-desktop": {
+    "header": [
+      "investors-en-desktop-header.png",
+      [
+        250,
+        26,
+        1500,
+        34
+      ]
+    ]
+  }
+}

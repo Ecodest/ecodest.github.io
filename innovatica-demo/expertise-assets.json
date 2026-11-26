@@ -1,0 +1,62 @@
+[
+  {
+    "source": "InnSys/Expertize V2. Desktop-Bank.Ru.png",
+    "sha256": "829ac13ed63f6250fb4f44615f9ef54081304f3ac4dc436d08d6b5be26101212",
+    "output": "expertise-bank-desktop.webp",
+    "dimensions": [
+      4320,
+      13038
+    ],
+    "encoding": "WebP quality 92; source 3× dimensions retained"
+  },
+  {
+    "source": "InnSys/Expertize №3 V2. Mob. Ru.png",
+    "sha256": "a978651a7e13925f614c261c077f87755d6a57c71290837a821dd503a276a2fd",
+    "output": "expertise-bank-mobile.webp",
+    "dimensions": [
+      1125,
+      14343
+    ],
+    "encoding": "WebP quality 92; source 3× dimensions retained"
+  },
+  {
+    "source": "InnSys/Expertize Роскосмос. Desktop.png",
+    "sha256": "b6ff84182913748c3ce5f5e0aace0bba4d239f3a99271b443f72a8cfb80925b3",
+    "output": "expertise-roscosmos-desktop.webp",
+    "dimensions": [
+      4320,
+      12000
+    ],
+    "encoding": "WebP quality 92; source 3× dimensions retained"
+  },
+  {
+    "source": "InnSys/Expertize №2 V2. Mob. Ru.png",
+    "sha256": "d76a584e92f11b2fc36f88ca3674480895cf4528a2a8416340b4ec66d3073bd8",
+    "output": "expertise-roscosmos-mobile.webp",
+    "dimensions": [
+      1125,
+      12516
+    ],
+    "encoding": "WebP quality 92; source 3× dimensions retained"
+  },
+  {
+    "source": "InnSys/Expertize Норникель. Desktop.Ru.png",
+    "sha256": "fe7f9bc80bcd380bb25830b9239cc35dac2671586e9e4c1cc8e83e89187d0247",
+    "output": "expertise-nornickel-desktop.webp",
+    "dimensions": [
+      4320,
+      13224
+    ],
+    "encoding": "WebP quality 92; source 3× dimensions retained"
+  },
+  {
+    "source": "InnSys/Expertize V2. Mob. Ru.png",
+    "sha256": "a7d8a69cd2a943d10f3dd787776a1e4cc0cf4418ae03b6aae9ad7bf6bf9b2114",
+    "output": "expertise-nornickel-mobile.webp",
+    "dimensions": [
+      1125,
+      13737
+    ],
+    "encoding": "WebP quality 92; source 3× dimensions retained"
+  }
+]

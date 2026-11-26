@@ -1,0 +1,15 @@
+html,body,.world-background{background:#18283b}
+.world-landscape{
+  left:50%;
+  width:max(100vw,calc(140dvh * 1672 / 941));
+  height:auto;
+  max-width:none;
+  translate:-50% 0;
+}
+.world-wash{background:rgba(9,27,48,.48)}
+.reading-fog{
+  height:clamp(160px,29vh,300px);
+  background:linear-gradient(to bottom,#07172cbb,#07172c80 26%,#07172c32 59%,transparent);
+  backdrop-filter:blur(8px);
+  mask-image:linear-gradient(#000 28%,transparent);
+}
