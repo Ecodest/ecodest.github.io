@@ -1,0 +1,95 @@
+@font-face {
+  font-family: DoppelgangerRUS;
+  src: url("/gallery-draft/Doppelganger-RUS.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Onest;
+  src: url("/gallery-draft/Onest.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+* { box-sizing: border-box; }
+html { background: #18283b; }
+body { margin: 0; color: #f3f0e9; font: 400 1rem/1.5 Onest, sans-serif; }
+a { color: inherit; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; border-radius: 4px; }
+
+.error-backdrop {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.error-backdrop img {
+  position: absolute;
+  inset-block-start: 70%;
+  inset-inline-start: 50%;
+  inline-size: max(100%, calc(160vh * 1672 / 941));
+  inline-size: max(100%, calc(160lvh * 1672 / 941));
+  block-size: auto;
+  /* The horizon in the Sunset photograph is about 80% down the image. */
+  transform: translate(-50%, -80%);
+}
+.error-page {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  padding-block: calc(54px + env(safe-area-inset-top)) calc(54px + env(safe-area-inset-bottom));
+  padding-inline: max(20px, env(safe-area-inset-left), env(safe-area-inset-right));
+}
+.error-languages {
+  position: absolute;
+  inset-block-start: calc(10px + env(safe-area-inset-top));
+  inset-inline-end: max(16px, env(safe-area-inset-right));
+  display: flex;
+  gap: 2px;
+}
+.error-languages a {
+  display: grid;
+  place-items: center;
+  min-inline-size: 44px;
+  min-block-size: 44px;
+  color: #f3f0e9b8;
+  font-size: .82rem;
+  text-decoration: none;
+}
+.error-languages a[aria-current], .error-languages a:hover { color: #f3f0e9; }
+
+.error-content {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: clamp(12px, 2.3vmin, 24px);
+}
+.error-content h1 {
+  margin: 0;
+  font: 400 clamp(5.5rem, min(37vw, 30svh), 16rem)/.76 DoppelgangerRUS, serif;
+}
+.error-content p {
+  margin: 0;
+  font-size: clamp(1rem, 2.2vmin, 1.35rem);
+}
+.error-home {
+  display: inline-grid;
+  place-items: center;
+  min-block-size: 44px;
+  padding-inline: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.error-home span { position: relative; padding-block-end: 4px; }
+.error-home span::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #f3f0e980 22%, #f3f0e980 78%, transparent);
+}
+.error-home:hover span::after, .error-home:focus-visible span::after {
+  background: linear-gradient(90deg, transparent, #f3f0e9 22%, #f3f0e9 78%, transparent);
+}
