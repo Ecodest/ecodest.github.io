@@ -3,6 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+  if (location.hostname === "fedorova.tech") {
+    window.ym = window.ym || function () { (window.ym.a ||= []).push(arguments); };
+    window.ym.l = Date.now();
+
+    const metrikaTag = document.createElement("script");
+    metrikaTag.async = true;
+    metrikaTag.src = "https://mc.yandex.ru/metrika/tag.js?id=114705441";
+    document.head.append(metrikaTag);
+
+    window.ym(114705441, "init", { ssr: true, trackLinks: true, clickmap: false, webvisor: false });
+  }
+</script>
+
   <meta name="robots" content="noindex,follow">
   <meta name="theme-color" content="#18283b">
   <title data-copy-en="Page not found | Ecodest">Страница не найдена | Ecodest</title>
